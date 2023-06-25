@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;500;900&display=swap');
+
+
+:root{
+    --main-color: #473288;
+    --main-color-hover:#8A75ED;
+    --bg-btn:#7B66EF;
+    --bg-btn-title:#FFF4E0;
+    --color-btn-txt:#FCA80F;
+    --white:#fff;
+}
+
+*{
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--white);
+}
+
+/*HEADER*/
+.header{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 4%;
+    border-bottom: var(--white);
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    z-index: 1000;
+}
+ 
+.header .logo img{
+    width: 16rem; 
+}
+
+.header .navbar a{
+    color:#434348;
+    margin: 0.1rem;
+    font-size: 1.8rem;
+    padding: 5px 25px;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color-hover);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: var(--color-btn-txt);
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius:20px;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--bg-btn);
+    cursor: pointer;
+}
+
+
+/*section start*/
+
+section{
+    padding: 2rem 7%;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/mainback.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .btn1{
+    margin: 2rem;
+    display: inline-block;
+    border-radius:20px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color:var(--color-btn-txt);
+    background: var(--bg-btn-title);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color:var(--main-color);
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #000000;
+}
+
+/*feature*/
+
+.features{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.features .btn{
+    margin: 2rem;
+    display: inline-block;
+    border-radius:20px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color:var(--color-btn-txt);
+    background: var(--bg-btn-title);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.features h3{
+    font-size: 4.5rem;
+    color: var(--main-color);
+}
+
+.features p{
+    font-size: 2rem;
+    color: #000000;
+    padding: 1rem 0;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    gap: 2rem;
+}
+
+.features .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.features .box-container .box h2{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+/*about us*/
+
+/*about*/
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 50rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin-left:12%
+}
+
+.about .row .content .btn1{
+    margin: 4rem;
+    display: inline-block;
+    border-radius:20px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color:var(--color-btn-txt);
+    background: var(--bg-btn-title);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.about .row .content h3{
+    font-size: 4.5rem;
+    color: var(--main-color);
+    margin-bottom: 2.5rem;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #29222F;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.about .row .content .btn{
+    margin-top: 2.5rem;
+    display: inline-block;
+    border-radius:20px;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--bg-btn);
+    cursor: pointer;
+}
+
+/*about us end*/
+
+/*services*/
+
+.services{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.services .btn1{
+    margin: 2rem;
+    display: inline-block;
+    border-radius:20px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color:var(--color-btn-txt);
+    background: var(--bg-btn-title);
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+ .services .box-container{
+    display: grid;
+    /*1fr چیزی است که به مرورگر می‌گوید که فضای بین ستون‌ها را طوری توزیع کند که هر ستون به طور مساوی یک کسری از آن فضا را بگیرد. یعنی همگی ستون‌هایی سیال و با عرض مساوی هستند. و شبکه، در این مثال، همیشه دارای 12 ستون بدون توجه به عرض آن خواهد بود. همانطور که احتمالاً حدس زده اید، این به اندازه کافی خوب نیست، زیرا محتوا در نماهای کوچکتر بسیار فشرده می شود.
+
+بنابراین باید با تعیین حداقل عرض برای ستون‌ها شروع کنیم و مطمئن شویم که خیلی باریک نمی‌شوند. ما می توانیم این کار را با استفاده از تابع minmax() انجام دهیم.*/
+    grid-template-columns: repeat(auto-fit,minmax(60rem,1fr));
+    gap: 2rem;
+ }
+
+ .services .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: #434348;
+}
+
+.services .box-container .box img{
+    height: 10rem;
+}
+
+.services .box-container .box h3{
+    color:var(--main-color);
+    font-size: 2rem;
+    padding: 2.5rem 0;
+}
+
+.services pre{
+    font-size: 2rem;
+    color: #4C2228;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-left: -8rem;
+}
+
+
+
+
+/* Media Queries*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1rem 1.5rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+}
+/*----------------------------------------------*/
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #1F1945;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+
+    .header .navbar a{
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+    .home .content p{
+        font-size: 1rem;
+    }
+ 
+
+}
+
+/*------------------------------*/
+
+@media (max-width:450px){
+    html{
+        font-size: 40%;
+    }
+
+}
